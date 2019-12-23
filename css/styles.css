@@ -17,9 +17,13 @@ a {
 
 .container {
     display: flex;
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    /*height: 100%;*/
+}
+
+.main-header .container {
     justify-content: space-between;
     align-items: center;
 }
@@ -53,7 +57,8 @@ a {
     display: block;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: bold;
     color: #000000;
 }
 
@@ -100,3 +105,35 @@ a {
     border-radius: 7px;
 }
 
+.features {
+    padding-top: 40px;
+    padding-bottom: : 40px;
+}
+
+.features .container {
+    width: 1100px;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.features-item {
+    width: 31%;
+}
+
+.features h2 {
+    margin-bottom: 15px;     
+    font-size: 28px;
+}
+
+.features p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+/*-----------------------------*/
+
+div {
+    border: 1px red dotted;
+}
