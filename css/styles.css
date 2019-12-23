@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-title {
+    display: table-cell;
+    /* vertical-align: middle; */
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.main-menu a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.main-menu a:hover {
+    color: lightgrey;
+}
+
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: url("../img/lunar_mare.jpg") center no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.page-title-logo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    background: url("../img/logo.png");
+    background-size: 100% 100%;
+}
+
+.page-title-text h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.page-title-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.page-title-text a {
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
