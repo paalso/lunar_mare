@@ -11,10 +11,16 @@ a {
   text-decoration: none;
 }
 
-.main-header {
+h2 {
+  margin-bottom: 18px;
+  font-size: 28px;
+}
+
+.header {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
+  color: #000000;
 }
 
 .container {
@@ -23,7 +29,8 @@ a {
   margin: 0 auto;
 }
 
-.main-header .container {
+.header .container,
+.footer .container {
   justify-content: space-between;
   align-items: center;
 }
@@ -40,10 +47,8 @@ a {
 
 .logo-title {
   display: table-cell;
-  /* vertical-align: middle; */
   margin-left: 15px;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -62,7 +67,7 @@ a {
   color: #000000;
 }
 
-.main-menu a:hover {
+a:hover {
   color: lightgrey;
 }
 
@@ -74,7 +79,7 @@ a {
   padding-top: 25px;
   padding-bottom: 25px;
   background: url("../img/lunar_mare.jpg") center no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   color: #ffffff;
   text-align: center;
 }
@@ -105,7 +110,9 @@ a {
 }
 
 .features,
-.about {
+.about,
+.feedback,
+.footer {
   padding-top: 45px;
   padding-bottom: 45px;
 }
@@ -121,7 +128,8 @@ a {
 }
 
 .features .container,
-.about .container {
+.about .container,
+.footer .container {
   width: 1100px;
   justify-content: space-between;
   flex-direction: row;
@@ -134,12 +142,6 @@ a {
 
 .features-item {
   width: 31%;
-}
-
-.features h2,
-.about h2 {
-  margin-bottom: 15px;
-  font-size: 28px;
 }
 
 .features p,
@@ -158,12 +160,97 @@ a {
   width: 42%;
 }
 
-/*-----------------------------*/
-
-/* div {
-  border: 1px red dotted;
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
 }
 
-section {
-  border: 1px blue dotted;
-} */
+.feedback h2 {
+  margin-bottom: 20px;
+}
+
+.feedback h3 {
+  position: relative;
+  display: inline;
+  top: 12px;
+  left: 25px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #09d3ac;
+  background-color: #f7f7f7;
+}
+
+.feedback table {
+  width: 420px;
+  margin-bottom: 12px;
+  padding: 15px 0 15px 0;
+  border: solid 2px #09d3ac;
+  color: #2d3544;
+}
+
+.feedback table .title {
+  width: 50%;
+}
+
+.feedback table td {
+  padding: 10px 0 10px 15px;
+}
+
+.feedback table .title {
+  font-weight: bold;
+}
+
+.feedback .form-block select,
+.feedback .form-block input {
+  width: 140px;
+  padding: 7px;
+  border: 1px #dbdbdb solid;
+  border-radius: 7px;
+}
+
+.feedback .form-block input {
+  width: 165px;
+}
+
+.feedback input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 30px 10px 30px;
+  color: #09d3ac;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 1px #09d3ac;
+  border-radius: 7px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #303846;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer ul {
+  margin-left: 40px;
+}
+
+.footer a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: lightgrey;
+}

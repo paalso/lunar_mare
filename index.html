@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <div class="container">
         <div class="logo">
           <div class="logo-img">
@@ -98,6 +98,102 @@
         <img src="img/astronaut.jpg" width="330" alt="Бухающий астронавт" />
       </div>
     </section>
-    <section class="feedback"></section>
+    <section class="feedback">
+      <h2>Оставьте заявку сегодня!</h2>
+      <form action="#" method="POST">
+        <div class="form-block">
+          <h3>Параметры квартиры</h3>
+          <table>
+            <tr>
+              <td class="title">
+                <label for="rooms_qty">Количество комнат:</label>
+              </td>
+              <td class="field">
+                <select name="rooms_qty" id="rooms_qty">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="decor_info">Отделка:</label>
+              </td>
+              <td class="field">
+                <select name="decor_info" id="decor_info">
+                  <option value="decor_none">Без отделки</option>
+                  <option value="decor_basic">Базовая отделка</option>
+                  <option value="decor_lux">Отделка Люкс</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="form-block">
+          <h3>Контактная информация</h3>
+          <table>
+            <tr>
+              <td class="title">
+                <label for="username">Имя:</label>
+              </td>
+              <td class="field">
+                <input type="text" name="username" id="username" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="phone">Телефон:</label>
+              </td>
+              <td class="field">
+                <input type="tel" name="phone" id="phone" />
+              </td>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="phone">E-mail:</label>
+              </td>
+              <td class="field">
+                <input type="email" name="email" id="email" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <input type="submit" value="Отправить" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-copyright">
+          <div class="logo">
+            <div class="logo-img">
+              <a href="#"
+                ><img src="img/logo.png" width="40" alt="Лунное море"
+              /></a>
+            </div>
+            <div class="logo-title">
+              Лунное море
+            </div>
+          </div>
+          <p class="copyright">&copy;2032 год</p>
+        </div>
+        <div class="additional-info">
+          <h4>Проектная документация</h4>
+          <ul>
+            <li><a href="#">Скачать</a></li>
+            <li><a href="#">Посмотреть на сайте</a></li>
+          </ul>
+        </div>
+        <div class="additional-info">
+          <h4>О застройщике</h4>
+          <ul>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Сайт комании</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
