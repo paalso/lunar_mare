@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
 
@@ -16,27 +19,43 @@ h2 {
   font-size: 28px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-top {
+  align-items: top;
+}
+
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
-  color: #000000;
 }
 
 .container {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
-}
-
-.header .container, .footer .container {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
 }
 
 .logo-img {
@@ -52,8 +71,6 @@ h2 {
 }
 
 .main-menu ul {
-  display: flex;
-  justify-content: flex-start;
   list-style: none;
 }
 
@@ -63,7 +80,6 @@ h2 {
   padding-right: 10px;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
 }
 
 a:hover {
@@ -71,10 +87,7 @@ a:hover {
 }
 
 .page-title {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-around;
   padding-top: 25px;
   padding-bottom: 25px;
   background: url("../img/moonscape.png") center no-repeat;
@@ -125,9 +138,7 @@ a:hover {
 
 .features .container, .about .container, .footer .container {
   width: 1100px;
-  justify-content: space-between;
   flex-direction: row;
-  align-items: top;
 }
 
 .about .reversed {
@@ -145,7 +156,6 @@ a:hover {
 }
 
 .about .container {
-  justify-content: space-around;
   flex-direction: inherit;
 }
 
@@ -154,9 +164,7 @@ a:hover {
 }
 
 .feedback {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #f7f7f7;
 }
 
@@ -223,9 +231,13 @@ a:hover {
   background-color: #303846;
 }
 
+.footer .logo {
+  width: 160px;
+}
+
 .footer .copyright {
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .footer h4 {
